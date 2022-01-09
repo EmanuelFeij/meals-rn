@@ -1,24 +1,26 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-type FavoritesScreenProps = {
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-}
 
+type FavoritesScreenProps =  {
+    navigation: NativeStackNavigationProp<any>;
+  };
 const FavoritesScreen = (props: FavoritesScreenProps) => {
-    return (
-        <View>
-            <Text></Text>
-        </View>
-    )
-}
+  return (
+    <View style={styles.screen}>
+      <Text>FavoritesScreen</Text>
+    </View>
+  );
+};
 
-export default FavoritesScreen
+export default FavoritesScreen;
 
 const styles = StyleSheet.create({
-    screen: { 
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }
-})
+  screen: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
